@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [selectedColor, setSelectedColor] = useState({});
   const [bgValue, setBgValue] = useState("#FFFFFF");
-  const [displayType, setDisplayType] = useState("color");
+  const [displayType, setDisplayType] = useState("hex");
 
   const selectColor = () => {
     const randomColor = Math.floor(Math.random() * colours.length);
